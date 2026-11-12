@@ -1,0 +1,15 @@
+//0(logn)
+//o(logn) auxilary space
+class Solution{	
+	public:
+		int NnumbersSum(int N){
+			int sum =0;
+            if (N==0 ){
+                return 0;
+            }
+            sum=N+NnumbersSum(N-1);
+            return sum;
+		}
+};
+
+
